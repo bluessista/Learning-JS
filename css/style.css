@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #b373cd;
+}
+
+#wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem auto;
+    width: 85vw;
+}
+
+.course {
+    padding: 1rem;
+    width: 30vw;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0 rgb(174, 135, 191);
+    background-color: #fff;
+}
+
+#header,
+#footer {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+}
