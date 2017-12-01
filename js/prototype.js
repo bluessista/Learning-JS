@@ -13,11 +13,11 @@ const findTheNote = [1, 19, null, 'we', 18, 'like', null, 116, 3, 'you'];
 const int = findTheNote.filter(e => typeof(e) === 'number');
 const add = int.reduce((a, b) => a + b);
 
-console.log(int);
-console.log(add);
+// console.log(int);
+// console.log(add);
 
 const note = findTheNote.filter(s => typeof(s) === 'string');
 const sentence = `"${note.join(' ', ', ')}"`;
 
-console.log(note);
+// console.log(note);
 console.log(sentence);
