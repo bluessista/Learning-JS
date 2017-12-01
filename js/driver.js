@@ -242,30 +242,106 @@ var clients = [
     driverId: 1098,
     carId: 2238,
     position: [53.570458, 9.996521, 6.12]
-  },
+  }
 ]
 //console.log(clients.length);
 
 //Return Array of all clients who are less than 3000 meters away in following form:
 //{distance: Number in meters, driverId: Number, carId: Number if existent, location {lat: Number, long: Number}}
 
+// 1. Filter alle Objekte, die distance < 3 oder distanceLength < 3000
+// 2. Objekte transformieren
+// a. distance in meter umwandeln, latitude & longitude -> 'lat' und 'long'
+// b. distanceLength -> distance, position [lat, long, height] in location: {lat: lat, long: long}
 
-//alle distance Werte in Meter umwandeln
-meters = clients.map((client) => {
-  if(client.distance) {
-    return client.distance *= 1000;
+
+
+
+
+//
+// clientsWithMetersLessThan3000 = clients.filter(client => {
+//    return (distance < 3 || distanceLength < 3000) ? true : false
+// })
+//
+// desiredClients = [];
+//
+// clientsWithMetersLessThan3000.forEach(client => {
+//    if (a) {
+//      distanceInMeter();
+//        client.location.latitude
+//      }
+//    else {
+//      renameProperties();
+//      positionArrayToLocationObject(client);
+//    }
+// })
+
+const object = {
+  key : 'value',
+  value : 'value2',
+  nested : {
+    key: 'value3'
+  }
+};
+
+for (let propertyName in object) {
+  if (object.hasOwnProperty(propertyName)) {
+
+  }
+   // value, value2, [key: 'value3}
+}
+
+const object2 = {
+  key: object.value
+};
+
+console.log(object.key) //value
+console.log(object['key']) // value
+console.log(object[object.key]) // object.value object['value'] = value2
+object.nested.key = "value3";
+// value3 mit value
+object.nested.key = 'value';
+object.nested.key = object.key;
+
+
+
+const positionArrayToLocationObject = (client) => {
+  const location = {
+    lat: client.position[0],
+    long: client.position[1]
   };
-});
+  return location;
+};
+
+
+
+var renameProperties = (obj, from, to) => {
+  obj[to] = obj[from];
+  delete obj[from];
+};
+newClients = [];
+//alle distance Werte in Meter umwandeln
+const handle = (client) => {
+  if(client.hasOwnProperty('distance')) {
+    client.distance *= 1000;
+  }
+
+  if(client.distanceLength) {
+
+    clients.forEach((obj) => {
+      renameProperties(obj, 'distanceLength', 'distance')
+    });
+  };
+  return client;
+}
+
+const result = clients.map(handle);
+
+
 console.log(meters, clients);
 
 //Werte aus distanceLength in distance speichern und distanceLength löschen
-if(clients.distanceLength) {
-  var renameProperties = (obj, from, to) => {
-      obj[to] = obj[from];
-      delete obj[from];
-    };
-  clients.forEach(obj => renameProperties(obj, 'distanceLength', 'distance'));
-};
+
 //=> warum wird hier die distance der oberen Werte überschrieben?
 //Objekte, die distance < 3000 sind, ausgeben
 
@@ -349,7 +425,7 @@ if(clients.distanceLength) {
 //
 // distanceUnder3000m(clients);
 
-// let positionBeLocation = (arr) => {
+// let positionBeLocation = (client) => {
 //   // var location = {
 //   //   arr.location.lat,
 //   //   arr.location.long
