@@ -257,34 +257,33 @@ var clients = [
 // 1.
 
 const clientsLess3000m = clients.filter((client) => (client.distance < 3 || client.distanceLength < 3000) ? true : false);
-
 // 2.
 const locationKeyShortener = (client) => {
-  const location = {
+  client.location = {
     lat: client.location.latitude,
     long: client.location.longitude
   };
-  return location;
+  return client.location;
 };
 
 const positionArrayToLocationObject = (client) => {
-  const location = {
+  client.location = {
     lat: client.position[0],
     long: client.position[1]
   };
-  return location;
+  delete client.position;
+  return client.location;
 };
 
 var newClients = clientsLess3000m.map((client) => {
 
-//2a.
+  //2a.
   if(client.hasOwnProperty('distance')) {
     client.distance *= 1000;
-
     locationKeyShortener(client);
   }
 
-//2b.
+  //2b.
   if(client.hasOwnProperty('distanceLength')) {
     client.distance = client.distanceLength;
     delete client.distanceLength;
