@@ -1,0 +1,26 @@
+.project {
+  border: 10px solid rgb(174, 135, 191);
+  border-radius: 50%;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: ease-in .4s;
+
+  &:hover {
+    background-color: $main-bgc;
+    color: $dark-purple;
+  }
+
+  & a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+    &:hover {
+      color: $dark-purple;
+    }
+  }
+}

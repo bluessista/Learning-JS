@@ -8,7 +8,8 @@ body {
   background-color: #b199bb; }
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  color: #44235b; }
 
 h2 {
   font-size: 2em; }
@@ -17,10 +18,8 @@ h3 {
   font-size: 1.5em; }
 
 #wrapper {
-  display: grid;
-  grid-gap: 1.5em;
-  margin: 1rem auto;
-  width: 85vw; }
+  margin: .5rem auto;
+  width: 90vw; }
   #wrapper:first-of-type {
     grid-auto-columns: 100%; }
   #wrapper:last-of-type {
@@ -28,7 +27,7 @@ h3 {
 
 #courses {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem; }
 
 button {
@@ -48,7 +47,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
-  width: 30vw;
+  width: 100%;
   min-height: 200px;
   border-radius: 4px;
   box-shadow: 10px 10px 0 #ae87bf;
@@ -57,5 +56,25 @@ button {
     padding-bottom: 1em; }
   .course p {
     padding-bottom: 1em; }
+
+.project {
+  border: 10px solid #ae87bf;
+  border-radius: 50%;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: ease-in .4s; }
+  .project:hover {
+    background-color: #7e46a4;
+    color: #44235b; }
+  .project a {
+    text-decoration: none;
+    color: white;
+    text-align: center; }
+    .project a:hover {
+      color: #44235b; }
 
 /*# sourceMappingURL=style.css.map */
