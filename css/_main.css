@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$mainBgc".
-        on line 9 of css/_main.scss
+        on line 17 of css/_main.scss
 
-4:     box-sizing: border-box;
-5:     font: normal normal 16px Verdana, Arial, sans-serif;
-6: }
-7: 
-8: body {
-9:     background-color: $mainBgc;
-10: }
-11: 
-12: h1 {
-13:   font-size: 2.5em;
-14:   color: white;
+12: body {
+13:   min-height: 100%;
+14:   display: grid;
+15:   grid-template-rows: 1fr auto;
+16:   align-items: start;
+17:   background-color: $mainBgc;
+18: }
+19: 
+20: h1 {
+21:   font-size: 2.5em;
+22:   color: white;
 
 Backtrace:
-css/_main.scss:9
+css/_main.scss:17
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -66,4 +66,4 @@ css/_main.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$mainBgc\".\A         on line 9 of css/_main.scss\A \A 4:     box-sizing: border-box;\A 5:     font: normal normal 16px Verdana, Arial, sans-serif;\A 6: }\A 7: \A 8: body {\A 9:     background-color: $mainBgc;\A 10: }\A 11: \A 12: h1 {\A 13:   font-size: 2.5em;\A 14:   color: white;"; }
+  content: "Error: Undefined variable: \"$mainBgc\".\A         on line 17 of css/_main.scss\A \A 12: body {\A 13:   min-height: 100%;\A 14:   display: grid;\A 15:   grid-template-rows: 1fr auto;\A 16:   align-items: start;\A 17:   background-color: $mainBgc;\A 18: }\A 19: \A 20: h1 {\A 21:   font-size: 2.5em;\A 22:   color: white;"; }

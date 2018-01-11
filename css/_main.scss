@@ -5,8 +5,16 @@
     font: normal normal 16px Verdana, Arial, sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-    background-color: $mainBgc;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: start;
+  background-color: $mainBgc;
 }
 
 h1 {
@@ -28,31 +36,9 @@ h3 {
     width: 100vw;
 }
 
-#courses {
+.courses {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-}
-
-footer {
-  align-self: end;
-
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  background-color: $darkPurple;
-  color: white;
-  font-weight: lighter;
-  height: 75px;
-  padding: 0 1em;
-
-  a {
-    color: white;
-    text-decoration: none;
-    transition: .4s;
-
-    &:hover {
-      color: $lightPurple;
-    }
-  }
+  grid-gap: 2rem;
+  padding: 0 2em;
 }

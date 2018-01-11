@@ -1,7 +1,14 @@
 button {
   padding: 1em;
-  background-color: rgb(107, 21, 129);
+  background-color: white;
+  border: 1px solid $lightPurple;
   border-radius: .5em;
-  color: #fff;
+  color: $darkPurple;
   font-size: .8em;
+  transition: .3s;
+
+  &:hover {
+    color: $lightPurple;
+    border: 1px solid transparent;
+  }
 }
