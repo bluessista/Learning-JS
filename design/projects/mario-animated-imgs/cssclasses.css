@@ -1,0 +1,160 @@
+ html {
+            
+    font-size: 16px;
+    font-family: Proxima-Nova, sans-serif;
+        }
+        
+body {
+  
+    background-color: #FCF7E1;
+}
+        
+h1 {
+    color: red;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+@keyframes welcome {
+    0% {
+        color: red;
+    }
+    15% {
+        color: orange;
+    }
+    
+    30% {
+        color: yellow;
+    }
+    
+    45% {
+        color: green;
+    }
+    
+    60% {
+        color: cyan;
+    }
+    
+    75% {
+        color: dodgerblue;
+    }
+    
+    90% {
+        color: mediumpurple;
+    }  
+}
+
+.welcome {
+    animation: welcome 5s linear infinite;
+}
+
+h2 {
+    color: darkgreen;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+h3 {
+    padding: 0 15px;
+}
+
+p {
+    color: darkblue;
+}
+
+.warning {
+    color: red;
+}
+
+.container {
+    border: none;
+}
+
+div {
+    color: white;
+    background-color: floralwhite;
+    border: 2px dashed #F6D38B;
+    border-radius: 1em 2em 3em 4em;
+}
+  
+.nav {
+    background-color: ghostwhite;
+    color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.text {
+    padding: 20px;
+}
+
+.start {
+    align-items: center;
+    background-color: #E1FCE6;
+    display: flex;
+    flex-direction: column-reverse;
+/*            mario steht im html vor den button, da er als hover element in der reihenfolge zuerst stehen muss, deshalb column reverse */            
+}
+        
+.mario-jubel {
+    font-family: serif;
+    text-align: center;
+}
+
+.brick-button {
+    background-color: white;
+    background-image: url(bricks.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 0.1em;
+    border: none;
+    height: 80px;
+    margin-left: 100px;
+    width: 80px;          
+}
+/* Animation für Mario und den Brick*/
+@keyframes box-bounce-brick {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+.mario-jubel:hover + .brick-button
+ {
+     animation: box-bounce-brick 300ms ease-out;
+     animation-delay: 100ms;
+}
+ 
+@keyframes box-bounce-mario {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+.mario-jubel:hover {
+    animation: box-bounce-mario 300ms ease-out;
+}
+       
+img {
+    border-radius: 1em;
+    width: 40%;
+    height: 40%;
+}

@@ -42,3 +42,7 @@ h3 {
   grid-gap: 2rem;
   padding: 0 2em;
 }
+
+.projects {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
