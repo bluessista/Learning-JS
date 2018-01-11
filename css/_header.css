@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$lightPurple".
-        on line 35 of css/_header.scss
+        on line 36 of css/_header.scss
 
-30:         color: white;
-31:         text-decoration: none;
-32:         transition: .4s;
-33: 
-34:         &:hover {
-35:           color: $lightPurple;
-36:         }
-37:       }
-38:     }
-39:   }
-40: }
+31:         color: white;
+32:         text-decoration: none;
+33:         transition: .4s;
+34: 
+35:         &:hover {
+36:           color: $lightPurple;
+37:         }
+38:       }
+39:     }
+40:   }
+41: }
 
 Backtrace:
-css/_header.scss:35
+css/_header.scss:36
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -110,4 +110,4 @@ css/_header.scss:35
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$lightPurple\".\A         on line 35 of css/_header.scss\A \A 30:         color: white;\A 31:         text-decoration: none;\A 32:         transition: .4s;\A 33: \A 34:         &:hover {\A 35:           color: $lightPurple;\A 36:         }\A 37:       }\A 38:     }\A 39:   }\A 40: }"; }
+  content: "Error: Undefined variable: \"$lightPurple\".\A         on line 36 of css/_header.scss\A \A 31:         color: white;\A 32:         text-decoration: none;\A 33:         transition: .4s;\A 34: \A 35:         &:hover {\A 36:           color: $lightPurple;\A 37:         }\A 38:       }\A 39:     }\A 40:   }\A 41: }"; }
