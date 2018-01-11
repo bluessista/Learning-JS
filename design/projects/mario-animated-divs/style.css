@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#allgemein {
+    padding: 10px;
+    width: 100%;
+}
+
+#aussen {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#innen {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#pilzpic {
+    transform: translateY(100%);
+}
+
+#mariopic {
+    height: 15em;
+    padding: 2em;
+    width: 18em;
+    font-size: 10px;
+    z-index: 20;
+
+}
+
+/*#mariopic {
+    height: 300px;
+    width: 360px;
+}*/
+
+.mario {
+    background-color: #fff;
+    border: 0.01em solid #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    /*display: flex;
+    justify-content: center;*/
+    float: left;
+    height: 1em;
+    width: 1em;
+}
+
+#brickpic {
+    font-size: 20px;
+    height: 4em;
+    padding: 2em 3em 1em;
+    width: 9em;
+    z-index: 20;
+}
+
+.brick {
+    background-color: #fff;
+    box-sizing:border-box;
+    display: inline-block;
+    float: left;
+    height: 1em;
+    width: 1em;
+}
+
+.bricks {
+    border: 1px solid gray;
+    background-color: saddlebrown;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 1em;
+    width: 1em;
+}
+
+.bricks:nth-child(odd) {
+    background-color: goldenrod;
+    border: 0.3em solid sienna;
+}
+
+@keyframes box-bounce-brick {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-60px) ;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+#mariopic:hover + #innen {
+     animation: box-bounce-brick 300ms ease-out;
+     animation-delay: 200ms;
+}
+
+@keyframes box-bounce-mario {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+#mariopic:hover {
+    animation: box-bounce-mario 500ms ease-out;
+}
+
+#mariopic:hover + #innen #pilzpic {
+    animation: box-bounce-pilz 300ms ease-out forwards;
+    animation-delay: 600ms;
+}
+
+@keyframes box-bounce-pilz {
+     0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(6em);
+    }
+
+
+}
+
+#pilzpic {
+    height: 8em;
+    padding: 4em 12em 2em;
+    width: 8em;
+    font-size: 10px;
+}
+
+.pilz {
+    background-color: #fff;
+    box-sizing:border-box;
+    display: inline-block;
+    float: left;
+    height: 1em;
+    width: 1em;
+}
+
+.black {
+    background-color: #000;
+    border-color: #000;
+}
+
+.red {
+    background-color: #f00;
+    border-color: #f00;
+}
+
+.blue {
+    background-color: #00f;
+    border-color: #00f;
+}
+
+.brown {
+    background-color: saddlebrown;
+    border-color: saddlebrown;
+}
+
+.yellow {
+    background-color: gold;
+    border-color: gold;
+}
+
+.skin {
+    background-color: bisque;
+    border-color: bisque
+}
+
+.lightblue {
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+.orange {
+    background-color: darkorange;
+}

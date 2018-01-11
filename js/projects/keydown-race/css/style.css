@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.racing-track {
+  position: relative;
+  height: 400px;
+  background-color: black;
+}
+
+.player {
+  position: absolute;
+  left: 0;
+  width: 75px;
+  height: 50px;
+  margin-bottom: 30px;
+  transition: left 250ms;
+}
+
+.player1 {
+  top: 25%;
+  border: 1px solid green;
+}
+
+.player2 {
+  border: 1px solid blue;
+  top: 50% ;
+}
+
+.finish {
+  display: none;
+  position: fixed;
+  background-color: rgb(143, 181, 212);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 50px;
+  text-align: center;
+  }
+
+.finish p {
+  color: rgb(20, 43, 75);
+  font-size: 75px;
+  font-family: fantasy;
+}
+
+.flag {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.show {
+  display: block;
+}
+
+.black, .white {
+  width: 20%;
+  height: 20px;
+}
+
+.black {
+  background-color: #000;
+}
+
+.white {
+  background-color: #fff;
+}
