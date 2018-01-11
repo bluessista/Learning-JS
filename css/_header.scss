@@ -1,5 +1,41 @@
-#header {
+header {
   display: flex;
-  height: 100px;
+  justify-content: space-between;
   align-items: center;
+  width: 100vw;
+  color: white;
+  height: 75px;
+
+  h1 {
+    padding-left: 1em;
+  }
+
+  nav {
+    padding: 2em 0;
+
+    ul {
+      display: flex;
+    }
+
+    ul li {
+      list-style-type: none;
+      margin-right: 20px;
+
+      &.lastItem {
+        margin: 0;
+      }
+
+      a {
+        font-size: 19px;
+        line-height: normal;
+        color: white;
+        text-decoration: none;
+        transition: .4s;
+
+        &:hover {
+          color: $lightPurple;
+        }
+      }
+    }
+  }
 }

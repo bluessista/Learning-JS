@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: #b199bb;
+    background-color: $mainBgc;
 }
 
 h1 {
   font-size: 2.5em;
-  color: $dark-purple;
+  color: white;
 }
 
 h2 {
@@ -23,18 +23,36 @@ h3 {
 }
 
 #wrapper {
-    margin: .5rem auto;
-    width: 90vw;
-    &:first-of-type {
-      grid-auto-columns: 100%;
-    }
-    &:last-of-type {
-      grid-auto-columns: 100%;
-    }
+    display: grid;
+    grid-gap: 2em;
+    width: 100vw;
 }
 
 #courses {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
+}
+
+footer {
+  align-self: end;
+
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  background-color: $darkPurple;
+  color: white;
+  font-weight: lighter;
+  height: 75px;
+  padding: 0 1em;
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+
+    &:hover {
+      color: $lightPurple;
+    }
+  }
 }

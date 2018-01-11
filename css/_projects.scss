@@ -1,5 +1,5 @@
 .project {
-  border: 10px solid rgb(174, 135, 191);
+  border: 10px solid $lightPurple;
   border-radius: 50%;
   width: 100%;
   height: 300px;
@@ -10,17 +10,18 @@
   transition: ease-in .4s;
 
   &:hover {
-    background-color: $main-bgc;
-    color: $dark-purple;
+    background-color: $mainBgc;
+    color: $darkPurple;
   }
 
   & a {
     text-decoration: none;
     color: white;
     text-align: center;
+    transition: .4s;
 
     &:hover {
-      color: $dark-purple;
+      color: $darkPurple;
     }
   }
 }

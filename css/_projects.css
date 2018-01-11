@@ -1,35 +1,24 @@
 /*
-Error: Undefined variable: "$main-bgc".
-        on line 13 of css/_projects.scss
+Error: Undefined variable: "$lightPurple".
+        on line 2 of css/_projects.scss
 
-8:   align-items: center;
-9:   flex-wrap: nowrap;
-10:   transition: ease-in .4s;
-11: 
-12:   &:hover {
-13:     background-color: $main-bgc;
-14:     color: $dark-purple;
-15:   }
-16: 
-17:   & a {
-18:     text-decoration: none;
+1: .project {
+2:   border: 10px solid $lightPurple;
+3:   border-radius: 50%;
+4:   width: 100%;
+5:   height: 300px;
+6:   display: flex;
+7:   justify-content: center;
 
 Backtrace:
-css/_projects.scss:13
+css/_projects.scss:2
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `map'
+/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -77,4 +66,4 @@ css/_projects.scss:13
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main-bgc\".\A         on line 13 of css/_projects.scss\A \A 8:   align-items: center;\A 9:   flex-wrap: nowrap;\A 10:   transition: ease-in .4s;\A 11: \A 12:   &:hover {\A 13:     background-color: $main-bgc;\A 14:     color: $dark-purple;\A 15:   }\A 16: \A 17:   & a {\A 18:     text-decoration: none;"; }
+  content: "Error: Undefined variable: \"$lightPurple\".\A         on line 2 of css/_projects.scss\A \A 1: .project {\A 2:   border: 10px solid $lightPurple;\A 3:   border-radius: 50%;\A 4:   width: 100%;\A 5:   height: 300px;\A 6:   display: flex;\A 7:   justify-content: center;"; }

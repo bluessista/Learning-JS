@@ -5,11 +5,11 @@
   font: normal normal 16px Verdana, Arial, sans-serif; }
 
 body {
-  background-color: #b199bb; }
+  background-color: #7e46a4; }
 
 h1 {
   font-size: 2.5em;
-  color: #44235b; }
+  color: white; }
 
 h2 {
   font-size: 2em; }
@@ -18,17 +18,31 @@ h3 {
   font-size: 1.5em; }
 
 #wrapper {
-  margin: .5rem auto;
-  width: 90vw; }
-  #wrapper:first-of-type {
-    grid-auto-columns: 100%; }
-  #wrapper:last-of-type {
-    grid-auto-columns: 100%; }
+  display: grid;
+  grid-gap: 2em;
+  width: 100vw; }
 
 #courses {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem; }
+
+footer {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  background-color: #44235b;
+  color: white;
+  font-weight: lighter;
+  height: 75px;
+  padding: 0 1em; }
+  footer a {
+    color: white;
+    text-decoration: none;
+    transition: .4s; }
+    footer a:hover {
+      color: #ae87bf; }
 
 button {
   padding: 1em;
@@ -37,10 +51,32 @@ button {
   color: #fff;
   font-size: .8em; }
 
-#header {
+header {
   display: flex;
-  height: 100px;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  color: white;
+  height: 75px; }
+  header h1 {
+    padding-left: 1em; }
+  header nav {
+    padding: 2em 0; }
+    header nav ul {
+      display: flex; }
+    header nav ul li {
+      list-style-type: none;
+      margin-right: 20px; }
+      header nav ul li.lastItem {
+        margin: 0; }
+      header nav ul li a {
+        font-size: 19px;
+        line-height: normal;
+        color: white;
+        text-decoration: none;
+        transition: .4s; }
+        header nav ul li a:hover {
+          color: #ae87bf; }
 
 .course {
   display: flex;
@@ -48,7 +84,7 @@ button {
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
-  min-height: 200px;
+  min-height: 180px;
   border-radius: 4px;
   box-shadow: 10px 10px 0 #ae87bf;
   background-color: #fff; }
@@ -73,7 +109,8 @@ button {
   .project a {
     text-decoration: none;
     color: white;
-    text-align: center; }
+    text-align: center;
+    transition: .4s; }
     .project a:hover {
       color: #44235b; }
 

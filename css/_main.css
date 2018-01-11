@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$dark-purple".
-        on line 14 of css/_main.scss
+Error: Undefined variable: "$mainBgc".
+        on line 9 of css/_main.scss
 
-9:     background-color: #b199bb;
+4:     box-sizing: border-box;
+5:     font: normal normal 16px Verdana, Arial, sans-serif;
+6: }
+7: 
+8: body {
+9:     background-color: $mainBgc;
 10: }
 11: 
 12: h1 {
 13:   font-size: 2.5em;
-14:   color: $dark-purple;
-15: }
-16: 
-17: h2 {
-18:   font-size: 2em;
-19: }
+14:   color: white;
 
 Backtrace:
-css/_main.scss:14
+css/_main.scss:9
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/inga/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -66,4 +66,4 @@ css/_main.scss:14
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-purple\".\A         on line 14 of css/_main.scss\A \A 9:     background-color: #b199bb;\A 10: }\A 11: \A 12: h1 {\A 13:   font-size: 2.5em;\A 14:   color: $dark-purple;\A 15: }\A 16: \A 17: h2 {\A 18:   font-size: 2em;\A 19: }"; }
+  content: "Error: Undefined variable: \"$mainBgc\".\A         on line 9 of css/_main.scss\A \A 4:     box-sizing: border-box;\A 5:     font: normal normal 16px Verdana, Arial, sans-serif;\A 6: }\A 7: \A 8: body {\A 9:     background-color: $mainBgc;\A 10: }\A 11: \A 12: h1 {\A 13:   font-size: 2.5em;\A 14:   color: white;"; }
