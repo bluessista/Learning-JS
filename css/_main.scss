@@ -46,3 +46,21 @@ h3 {
 .projects {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+@media screen and (max-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .projects, .courses {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .projects, .courses {
+    grid-template-columns: 1fr;
+  }
+}

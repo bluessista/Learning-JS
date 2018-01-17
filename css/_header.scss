@@ -40,3 +40,72 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  header {
+
+    h2 {
+      font-size: 2em;
+      padding-left: .75em;
+      color: white;
+    }
+
+    nav {
+
+      ul li {
+        list-style-type: none;
+        margin-right: 15px;
+
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  header {
+
+    h2 {
+      font-size: 1.75em;
+      padding-left: .70em;
+      color: white;
+    }
+
+    nav {
+
+      ul li {
+        list-style-type: none;
+        margin-right: 12px;
+
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  header {
+
+    h2 {
+      font-size: 1.25em;
+      padding-left: .5em;
+      color: white;
+    }
+
+    nav {
+
+      ul li {
+        list-style-type: none;
+        margin-right: 10px;
+
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
