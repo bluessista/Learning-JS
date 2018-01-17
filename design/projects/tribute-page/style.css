@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  display: grid;
+  justify-content: center;
+}
+
+#wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  width: 85vw;
+  background-color: #e7daf0;
+  border-radius: 5px;
+  color: #444;
+}
+
+header {
+  text-align: center;
+  background-color: ;
+  height: 200px;
+  padding-top: 10px;
+}
+
+header h1 {
+  font-size: 3em;
+  padding-bottom: .1em;
+}
+
+header h4 {
+  color: #9c83ae;
+  padding-bottom: .5em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row h2 {
+  padding: 1em 0;
+}
+
+.col-4 {
+  width: 30%;
+}
+
+.col-4 a img {
+  border: thin solid white;
+  border-radius: 0.5em;
+}
+
+.thumbnail {
+  display: grid;
+  justify-content: center;
+  width: 95%;
+}
+
+.details {
+  background: white;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+  text-align: center;
+  height: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5em;
+  margin-top: -10%;
+}
+
+blockquote {
+  text-align: justify;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  padding: 0.7em;
+  border: thin solid #b39ac5;
+  border-radius: 0.5em;
+}
+
+blockquote:hover {
+  background-color: rgba(105, 61, 137, .2);
+}
+
+.achievements {
+  border: thin solid #b39ac5;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  font-size: 0.9em;
+}
+
+.achievements:hover {
+  background-color: rgba(105, 61, 137, .2);
+}
+
+.achievements ul {
+  margin-left: 1em;
+  padding: 0.5em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: #9c83ae;
+  border-radius: .5em;
+  padding-left: .5em;
+}
+
+p, ul {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  padding-left: .5em;
+}
+
+.footer-links li {
+  list-style: none;
+  padding-right: 1em;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #333;
+  transition: .4s;
+}
+
+.footer-links li a:hover {
+  color: #693d89;
+}
